@@ -11,11 +11,4 @@ import org.springframework.scheduling.annotation.Scheduled;
 @EnableScheduling
 @Configuration
 public class SchedulerConfig {
-  @Autowired
-  SimpMessagingTemplate template;
-
-  @Scheduled(fixedDelay = 1000)
-  public void sendAdhocMessages() {
-    template.convertAndSend("/topic/user", new Greeting("Fixed Delay Scheduler"));
-  }
 }

@@ -1,16 +1,7 @@
 package com.example.demo.model;
 
 public class HelloMessage {
-  private String name;
+  public String message;
 
-  public HelloMessage() {
-  }
-
-  public HelloMessage(String name) {
-    this.name = name;
-  }
-
-  public String getName() {
-    return name;
-  }
+  public String date;
 }
